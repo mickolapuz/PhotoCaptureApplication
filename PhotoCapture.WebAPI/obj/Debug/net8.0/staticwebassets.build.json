@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "o2R8EIpRYohs/LxY1ysIg2s3ATcJTuqbPnEbIR2xO5M=",
+  "Source": "PhotoCaptureApplication.WebAPI",
+  "BasePath": "_content/PhotoCaptureApplication.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

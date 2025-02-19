@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\PhotoCaptureApplication.UI.styles.css",
+      "PackagePath": "staticwebassets\\PhotoCaptureApplication.UI.styles.css"
+    },
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\Blazor\\PhotoCaptureApplication\\PhotoCaptureApplication.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.PhotoCaptureApplication.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.PhotoCaptureApplication.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.PhotoCaptureApplication.UI.props",
+      "PackagePath": "build\\PhotoCaptureApplication.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.PhotoCaptureApplication.UI.props",
+      "PackagePath": "buildMultiTargeting\\PhotoCaptureApplication.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.PhotoCaptureApplication.UI.props",
+      "PackagePath": "buildTransitive\\PhotoCaptureApplication.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

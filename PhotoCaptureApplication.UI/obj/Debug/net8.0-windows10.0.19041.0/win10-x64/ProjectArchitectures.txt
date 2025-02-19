@@ -1,0 +1,1 @@
+D:\Blazor\PhotoCaptureApplication\PhotoCaptureApplication.UI\PhotoCaptureApplication.UI.csproj;x64

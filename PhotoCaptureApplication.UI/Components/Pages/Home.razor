@@ -1,0 +1,75 @@
+﻿@page "/"
+@using Microsoft.Maui.ApplicationModel
+@using Microsoft.Maui.Storage
+
+<PageTitle>Capture Image</PageTitle>
+
+<h3>Capture an Image</h3>
+
+<button @onclick="TakePicture">Capture Image</button>
+
+@if (imagePath != null)
+{
+    <img src="@imagePath" width="300" />
+
+    <h4>Enter Metadata</h4>
+    <label>Title:</label>
+    <input @bind="Title" />
+
+    <label>Description:</label>
+    <textarea @bind="Description"></textarea>
+
+    <button @onclick="SaveImage">Save Image</button>
+}
+
+@code {
+    private string? imagePath;
+    private string Title = "";
+    private string Description = "";
+
+    public async Task TakePicture()
+    {
+        bool hasPermission = await CheckAndRequestPermissionsAsync();
+
+        if (!hasPermission)
+        {
+            Console.WriteLine("Permission denied!");
+            return;
+        }
+
+        try
+        {
+            var result = await MediaPicker.CapturePhotoAsync();
+            if (result != null)
+            {
+                imagePath = result.FullPath; 
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private async Task SaveImage()
+    {
+        Console.WriteLine($"Saving Image: {imagePath}");
+        Console.WriteLine($"Title: {Title}, Description: {Description}");
+        // Next step: Save to database
+    }
+
+    public async Task<bool> CheckAndRequestPermissionsAsync()
+    {
+        if (DeviceInfo.Platform != DevicePlatform.Android)
+            return true;
+
+        PermissionStatus status = await Permissions.CheckStatusAsync<Permissions.Camera>();
+
+        if (status != PermissionStatus.Granted)
+        {
+            status = await Permissions.RequestAsync<Permissions.Camera>();
+        }
+
+        return status == PermissionStatus.Granted;
+    }
+}
